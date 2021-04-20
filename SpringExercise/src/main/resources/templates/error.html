@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Error</title>
+</head>
+<body>
+	<h1 th:text="${status} + ' ' + ${error}"></h1>
+	<p th:text="${message}"></p>
+	<p>ログイン画面に戻ってください</p>
+	<form method="post" th:action="@{/logout}">
+		<button class="btn btn-link" type="submit">ログイン画面に戻る</button>
+	</form>
+  <!-- 仮置き
+  <div th:text="'timestamp: ' + ${timestamp}"></div>
+  <div th:text="'status: ' + ${status}"></div>
+  <div th:text="'error: ' + ${error}"></div>
+  <div th:text="'exception: ' + ${exception}"></div>
+  <div th:text="'message: ' + ${message}"></div>
+  <div th:text="'errors: ' + ${errors}"></div>
+  <div th:text="'trace: ' + ${trace}"></div>
+  <div th:text="'path: ' + ${path}"></div>  -->
+</body>
+</html>
